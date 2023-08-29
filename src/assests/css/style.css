@@ -1,0 +1,9 @@
+@font-face {
+    font-family: yekan;
+    src: url("../fonts/iranyekanwebbold.ttf") format("truetype");
+  }
+
+  body{
+    font-family: yekan;
+  }
+  

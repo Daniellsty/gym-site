@@ -105,32 +105,32 @@ const Main = () => {
         </div>
       </section>
       <div className="bg-secondary">
-        <div className="container-fluid pe-0 ms-1">
-          <div className="row  w-100 py-5">
-            <div className="col-lg-4 col-sm-6 my-5  ">
-              <div className="position-relative">
+        <div className="container-fluid pe-0 ps-3">
+          <div className="row  w-100 py-1">
+            <div className="col-lg-4 col-sm-6 my-2  ">
+              <div className="position-relative ">
 
-              <img className="img-section" src={shoulderDumble} alt="" />
+              <img className="img-section card-shadow" src={shoulderDumble} alt="" />
               <div >
                <h1 className="heading"> برنامه تمرینی</h1>
               </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-sm-6  my-5 ">
+            <div className="col-lg-4 col-sm-6  my-2 ">
               <div className="position-relative">
 
-              <img className="img-section" src={food} alt="" />
+              <img className="img-section card-shadow" src={food} alt="" />
               <div >
               <h1 className="heading">رژیم غذایی</h1>
               </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-sm-6 my-5  ">
+            <div className="col-lg-4 col-sm-6 my-2  ">
               <div className="position-relative" >
 
-              <img className="img-section h-100 card-img" src={gym} alt="" />
+              <img className="img-section h-100 card-img card-shadow" src={gym} alt="" />
               <div >
               <h1 className="heading "> مربی شخصی</h1>
               </div>
@@ -139,6 +139,19 @@ const Main = () => {
           </div>
         </div>
       </div>
+     <div className="container my-3">
+     <div className="row">
+            <div className="col-xl-6 col-lg-6 mx-auto">
+              <h1 className="text-center border-bottom w-25 mx-auto py-3 border-3 border-black">افتخارات</h1>
+              <p className="text-justify text-secondary text-center my-4">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه متن ساختگی با
+                تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                است، چاپگرها و طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+            </div>
+          </div>
+     </div>
     </div>
   );
 };

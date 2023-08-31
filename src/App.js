@@ -1,3 +1,5 @@
+import Contact from "./components/Contact/Contact";
+import Gallery from "./components/Gallery/Gallery";
 import Header from "./components/Header/Header";
 import Main from "./components/main/Main";
 
@@ -7,8 +9,9 @@ function App() {
 
 
       <Header/>
-    <Main/>
-      
+      <Main/>
+      <Gallery/>
+      <Contact/>
     </div>
   );
 }

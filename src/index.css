@@ -153,14 +153,6 @@ header{
   margin: 2em 0;
 }
 
-@media  (min-width:600px) {
-  
-  /* .img-section{
-    width: 50%;
-    margin: 2em 0;
-  } */
-}
-
 .awards{
   background-color: #151f20;
 
@@ -191,3 +183,141 @@ header{
 
 
 /* end of section  */
+
+
+
+.card-1,
+.card-2,
+.card-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(../src/assests/images/membership.jpg);
+  background-size: cover;
+  box-shadow: 7px 8px 50px #555;
+  max-width: 370px;
+}
+
+.card-list-item {
+  border-bottom: 1px groove #eee;
+  width: 55%;
+  margin: auto;
+}
+
+.membership-card-button {
+  background-color: #2980b9;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 130px;
+  border-radius: 25px;
+  box-shadow: 5px 8px 18px #000;
+  transition: all 0.4s;
+}
+
+.membership-card-button:hover {
+  background-color: #3498db;
+  transform: translateY(-2px);
+}
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.moveFromLeft {
+  animation-name: moveFromLeft;
+  animation-duration: 2s;
+}
+
+.moveFromRight {
+  animation-name: moveFromRight;
+  animation-duration: 2s;
+}
+
+.moveFromBottom {
+  animation-name: moveFromBottom;
+  animation-duration: 2s;
+}
+/* contact  */
+
+.contact{
+  background: linear-gradient(105deg, rgba(21,31,32,.8) 0%,rgba(21,31,32,.9) 50%,transparent 50%) , url(../src/assests/images/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input{
+  background: transparent;
+  border: none;
+  border-color: transparent;
+  border-radius: 0px;
+  color: #000;
+  border-bottom: 2px solid #ccc;
+  transition: all .8s;
+}
+
+.input:focus{
+  background: transparent;
+  border: none;
+  border-color: transparent;
+  box-shadow: none;
+  border-bottom: 2px solid #f5593d;
+}
+
+.submit-button{
+  background-color: #2980b9;
+  color: #eee;
+  transition: all .3s;
+}
+
+.submit-button:hover{
+  background-color: #3498db;
+  transform: translateY(-3px);
+}
+
+.label{
+  color: #777;
+  display: block;
+  font-size: 13px;
+  margin-top: -70px;
+  margin-right: 4px;
+  transition: all .4s;
+}
+
+.input:placeholder-shown + .label {
+  transform: translate(20px ,20px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/* end of contact  */
